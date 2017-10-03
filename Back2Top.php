@@ -1,9 +1,6 @@
 <?php
 namespace walter74\back2top;
 
-use yii\helpers\Html;
-use yii\helpers\Url;
-use Yii;
 /**
  * Back2Top button.
  */
@@ -27,7 +24,7 @@ class Back2Top extends \yii\base\Widget
      $view = $this->getView();
 	 //initialize the assets
 	 $js=<<<sss
-        $('body').append('<div id="{{id_widget}}" class="{{class_tag}}" style="{{style_tag}}"><span class="{{class_icon}}"></span>{{title}}</div>');
+        $('body').append('<div id="{{id_widget}}" class="{{class_tag}}"><span class="{{class_icon}}"></span>{{title}}</div>');
     	$(window).scroll(function () {
 			    if ($(this).scrollTop() != 0) {
 				    $('#{{id_widget}}').fadeIn();
@@ -61,13 +58,14 @@ ccc;
     $js = str_replace('{{style_tag}}',$this->style_tag,$js);
     $js = str_replace('{{title}}',$this->title,$js);
 //register assets  
-	$view->registerJs(($this->js!==null)?$js:$this->js,\yii\web\View::POS_READY);
-	$view->registerCss(($this->css!==null)?$css:$this->css);
- 
+    $view->registerJs(($this->js!==null)?$this->js:$js, \yii\web\View::POS_READY);
+    $view->registerCss(($this->css!==null)?$this->css:$css);
+  
  
  }   
     
   public function run(){
+	  
 	//replacement placeholder template
     	$this->template = str_replace('{{id_widget}}',$this->id,$this->template);
     	$this->template = str_replace('{{class_icon}}',$this->class_icon,$this->template);
@@ -78,3 +76,4 @@ ccc;
 	echo $this->template;
   }
 }
+
