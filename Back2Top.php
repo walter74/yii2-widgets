@@ -69,11 +69,11 @@ ccc;
     
   public function run(){
 	//replacement placeholder template
-	$this->template = str_replace('{{id_widget}}',$this->id,$this->template);
-    $this->template = str_replace('{{class_icon}}',$this->class_icon,$this->template);
-    $this->template = str_replace('{{class_tag}}',$this->class_tag,$this->template);
-    $this->template = str_replace('{{style_tag}}',$this->style_tag,$this->template);
-    $this->template = str_replace('{{title}}',$this->title,$this->template);
+    	$this->template = str_replace('{{id_widget}}',$this->id,$this->template);
+    	$this->template = str_replace('{{class_icon}}',$this->class_icon,$this->template);
+    	$this->template = str_replace('{{class_tag}}',$this->class_tag,$this->template);
+    	$this->template = str_replace('{{style_tag}}',$this->style_tag,$this->template);
+    	$this->template = str_replace('{{title}}',$this->title,$this->template);
 	//display template
 	echo $this->template;
   }
