@@ -28,4 +28,4 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \walter74\back2top\AutoloadExample::widget(); ?>```
+<?= \walter74\back2top\Back2Top::widget(); ?>```
