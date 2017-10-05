@@ -34,7 +34,7 @@ Once the extension is installed, simply use it in your code by  :
 You can configure several custom attributes which are set by default as follow :
 ```
  'id' =>"toTop"
- 'class_tag' => "btn btn-info"
+ 'class_tag' => 'btn btn-info'
  'style_tag'=>'display: block;'
  'position_bottom'=>'100px;'
  'position_right'=>'10px;'
