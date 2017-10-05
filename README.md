@@ -48,6 +48,9 @@ if you want to change these settings, you've to pass new value by widget config 
 ```
  
  it's possible even to inject your custom code or style rather than the default configuration, by passing through js and css respectevely since both two are set as null by default:
+ ```
  js=>null
  css=>null
+ ```
+ 
 Once you've modified the code, new code will be registered as init() function will be called.
