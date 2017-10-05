@@ -42,12 +42,12 @@ You can configure several custom attributes which are set by default as follow :
  'class_icon'=>'glyphicon glyphicon-chevron-up'
  'template'=>'<div id="{{id_widget}}" class="{{class_tag}}" style="{{style_tag}}"><span class="{{class_icon}}"></span>{{title}}</div>'
 ```
-if you want to change this settings, you've to pass new value by widget config as the example showed below:
+if you want to change these settings, you've to pass new value by widget config as the example showed below:
 ```php
 <?= \walter74\back2top\Back2Top::widget(['title'=>'go up','class_icon'=>'glyphicon glyphicon-arrow-up']); ?>
 ```
  
- it's possible even to inject your custom code or style rather than the default assets, by passing through js and css respectevely since both two are set as null by default:
+ it's possible even to inject your custom code or style rather than the default configuration, by passing through js and css respectevely since both two are set as null by default:
  js=>null
  css=>null
 Once you've modified the code, new code will be registered as init() function will be called.
