@@ -32,7 +32,7 @@ Once the extension is installed, simply use it in your code by  :
 ```
 
 You can configure several custom attributes which are set by default as follow :
-
+```
  'id' =>"toTop"
  'class_tag' => "btn btn-info"
  'style_tag'=>'display: block;'
@@ -41,7 +41,7 @@ You can configure several custom attributes which are set by default as follow :
  'title=>'Back To Top'
  'class_icon'=>'glyphicon glyphicon-chevron-up'
  'template'=>'<div id="{{id_widget}}" class="{{class_tag}}" style="{{style_tag}}"><span class="{{class_icon}}"></span>{{title}}</div>'
-
+```
 if you want to change this settings, you've to pass new value by widget config as the example showed below:
 ```php
 <?= \walter74\back2top\Back2Top::widget(['title'=>'go up','class_icon'=>'glyphicon glyphicon-arrow-up']); ?>
